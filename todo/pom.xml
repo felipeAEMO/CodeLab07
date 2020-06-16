@@ -1,0 +1,35 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>br.ucsal.web</groupId>
+  <artifactId>todo</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  <name>Todo</name>
+  <description>Lista de tarefas</description>
+  <properties>
+  <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  <maven.compiler.source>1.8</maven.compiler.source>
+  <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+  <dependencies>
+  	<dependency>
+  			<groupId>javax.servlet</groupId>
+  			<artifactId>javax.servlet-api</artifactId>
+  			<version>4.0</version>
+  			<optional>true</optional>
+  			<scope>provided</scope>
+  	</dependency>
+  </dependencies>
+  <build>
+  <finalName>todo</finalName>
+  	<plugins>
+  		<plugin>
+			<artifactId>maven-war-plugin</artifactId>
+			<version>3.1.0</version>  
+  		</plugin>
+  	</plugins>
+  	<groupId>org.eclipse.jetty</groupId>
+  	<artifactId>jetty-maven-plugin</artifactId>
+  	<version>9.4.28.v20200408</version>
+ </build>
+</project>
